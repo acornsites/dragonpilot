@@ -67,25 +67,25 @@ confs = [
   {'name': 'dp_ui_display_mode', 'default': 0, 'type': 'UInt8', 'min': 0, 'max': 1, 'conf_type': ['param', 'struct']},
   {'name': 'dp_ui_speed', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_ui_event', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
-  {'name': 'dp_ui_face', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
-  {'name': 'dp_ui_lead_info', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
+  {'name': 'dp_ui_face', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
+  {'name': 'dp_ui_lead_info', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_ui_laneline', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_ui_chevron', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
-  {'name': 'dp_ui_dm_cam', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
+  {'name': 'dp_ui_dm_cam', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_ui_rainbow', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
 
   #toyota
   {'name': 'dp_toyota_sng', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
-  {'name': 'dp_accel_profile_ctrl', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
+  {'name': 'dp_accel_profile_ctrl', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_accel_profile', 'default': 0, 'type': 'UInt8', 'min': 0, 'max': 2, 'depends': [{'name': 'dp_accel_profile_ctrl', 'vals': [True]}], 'conf_type': ['param', 'struct']},
-  {'name': 'dp_toyota_ap_btn_link', 'default': False, 'type': 'Bool', 'conf_type': ['param']},
+  {'name': 'dp_toyota_ap_btn_link', 'default': True, 'type': 'Bool', 'conf_type': ['param']},
   {'name': 'dp_toyota_cruise_override', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_toyota_cruise_override_speed', 'default': 30, 'type': 'UInt8', 'min': 5, 'max': 60, 'depends': [{'name': 'dp_accel_profile_ctrl', 'vals': [True]}], 'conf_type': ['param', 'struct']},
   {'name': 'dp_toyota_auto_lock', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_toyota_auto_unlock', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
-  {'name': 'dp_toyota_fp_btn_link', 'default': False, 'type': 'Bool', 'conf_type': ['param']},
+  {'name': 'dp_toyota_fp_btn_link', 'default': True, 'type': 'Bool', 'conf_type': ['param']},
 
-  {'name': 'dp_mapd', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
+  {'name': 'dp_mapd', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_local_db', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
 
 
@@ -117,7 +117,7 @@ confs = [
   {'name': 'dp_following_profile_ctrl', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_following_profile', 'default': 0, 'type': 'UInt8', 'min': 0, 'max': 2, 'depends': [{'name': 'dp_following_profile_ctrl', 'vals': [True]}], 'conf_type': ['param', 'struct']},
   {'name': 'dp_lateral_tune', 'default': 0, 'type': 'UInt8', 'conf_type': ['param']},
-  {'name': 'dp_lateral_torque_live_tune', 'default': False, 'type': 'Bool', 'conf_type': ['param']},
+  {'name': 'dp_lateral_torque_live_tune', 'default': True, 'type': 'Bool', 'conf_type': ['param']},
   # {'name': 'dp_accel_profile_ctrl', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   # {'name': 'dp_accel_profile', 'default': 0, 'type': 'UInt8', 'min': 0, 'max': 2, 'depends': [{'name': 'dp_accel_profile_ctrl', 'vals': [True]}], 'conf_type': ['param', 'struct']},
   # # safety
